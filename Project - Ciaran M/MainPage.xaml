@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="Project___Ciaran_M.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Project___Ciaran_M"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Border Background="Black"/>
+        <Border Grid.Column ="3" Background="Black"/>
+        <Border Grid.Column ="1" Background="Black"/>
+        <Border Grid.Row="1" Background="Black"/>
+        <Border Grid.Row="1" Grid.Column="1" Background="DarkSlateGray"/>
+        <Border Grid.Row="1" Grid.Column="3" Background="Black"/>
+
+        <StackPanel Grid.Row="0" Grid.Column="2" Margin="40,0,0,0" VerticalAlignment="Top">
+            <Button x:Name="Sun" Margin="243,0,0.2,0" Height="80" Width="80" CanDrag="False" Background="White" Content="The Sun" Click="Button_Click_Sun"/>
+            <Button x:Name="Mercury" Margin="243,0,0.2,0" Height="80" Width="80" CanDrag="False" Background="White" Content="Mercury" Click="Button_Click_Mercury"/>
+            <Button x:Name="Venus" Margin="243,0,0.2,0" Height="80" Width="80" CanDrag="False" Background="White" Content="Venus" Click="Button_Click_Venus"/>
+            <Button x:Name="Earth" Margin="243,0,0.2,0" Height="80" Width="80" CanDrag="False" Background="White" Content="Earth" Click="Button_Click_Earth"/>
+            <Button x:Name="Mars" Margin="243,0,0.2,0" Height="80" Width="80" CanDrag="False" Background="White" Content="Mars" Click="Button_Click_Mars"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2" Margin="40,0,0,0" VerticalAlignment="Top">
+            <Button x:Name="Jupiter" Margin="243,0,0.2,0" Height="80" Width="80" CanDrag="False" Background="White" Content="Jupiter" Click="Button_Click_Jupiter"/>
+            <Button x:Name="Saturn" Margin="243,0,0.2,0" Height="80" Width="80" CanDrag="False" Background="White" Content="Saturn" Click="Button_Click_Saturn"/>
+            <Button x:Name="Uranus" Margin="243,0,0.2,0" Height="80" Width="80" CanDrag="False" Background="White" Content="Uranus" Click="Button_Click_Uranus"/>
+            <Button x:Name="Neptune" Margin="243,0,0.2,0" Height="80" Width="80" CanDrag="False" Background="White" Content="Neptune" Click="Button_Click_Neptune"/>
+            <Button x:Name="Pluto" Margin="243,0,0.2,0" Height="80" Width="80" CanDrag="False" Background="White" Content="Pluto" Click="Button_Click_Pluto"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="40,0,0,0" VerticalAlignment="Top">
+            <TextBlock Foreground="White" FontSize="25" Text="Click on an icon on the right to display information"/>
+        </StackPanel>
+
+        <Image x:Name="DisplayPlanet" Grid.Column="1" Margin="20" Source="Assets/Earth.jpg" Height="300" />
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="40,0,0,0" VerticalAlignment="Top">
+            <TextBlock x:Name="PName" Foreground="White" FontSize="20" Text="Name:"/>
+            <TextBlock x:Name="PDesignation" Foreground="White" FontSize="20" Text="Designation:"/>
+            <TextBlock x:Name="PType" Foreground="White" FontSize="20" Text="Type:"/>
+            <TextBlock x:Name="PRadius" Foreground="White" FontSize="20" Text="Radius:"/>
+            <TextBlock x:Name="PVolume" Foreground="White" FontSize="20" Text="Volume:"/>
+            <TextBlock x:Name="PMass" Foreground="White" FontSize="20" Text="Mass:"/>
+            <TextBlock x:Name="PGravity" Foreground="White" FontSize="20" Text="Surface Gravity:"/>
+            <TextBlock x:Name="PDescription" Foreground="White" FontSize="20" Text="Description:"/>
+        </StackPanel>
+    </Grid>
+</Page>
